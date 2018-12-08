@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Soccer 101</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+    <script src="js/jquery-2.1.1.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div data-role="page" id="page-one">
+        <div data-role="header">
+            <h1>Nationality</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <ul id="list-nationality" data-role="listview" data-insert="true" data-filter="true"
+                data-filter-placeholder="Search Nationality..."></ul>
+        </div>
+    </div>
+    <div data-role="page" id="page-two">
+        <div data-role="header">
+            <h1>Team</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <ul id="list-team" data-role="listview" data-insert="true" data-filter="true" data-filter-placeholder="Search Team..."></ul>
+        </div>
+    </div>
+    <div data-role="page" id="page-three">
+        <div data-role="header">
+            <h1>Position</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <ul id="list-position" data-role="listview" data-insert="true" data-filter="true" data-filter-placeholder="Search Position..."></ul>
+        </div>
+    </div>
+    <div data-role="page" id="page-four">
+        <div data-role="header">
+            <h1>Player</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <ul id="list-player" data-role="listview" data-insert="true" data-filter="true" data-filter-placeholder="Search Player..."></ul>
+        </div>
+    </div>
+    <div data-role="page" id="page-five">
+        <div data-role="header">
+            <h1>Player Detail</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <table data-role="table" class="ui-responsive" data-mode="reflow" id="table-player">
+                <thead>
+                    <tr>
+                        <th data-priority="1">Name</th>
+                        <th data-priority="2">Birthday</th>
+                        <th data-priority="3">Nationality</th>
+                        <th data-priority="4">Team</th>
+                        <th data-priority="5">Position</th>
+                        <th data-priority="6">Height</th>
+                        <th data-priority="7">Weight</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script>
+        Application.initApplication();
+    </script>
+</body>
+
+</html>
